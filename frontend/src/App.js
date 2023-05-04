@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationBar from './Components/NavigationBar';
+import RouteSwitch from './RouteSwitch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+        crossOrigin="anonymous">
+      </link>
+      <NavigationBar />
+      <RouteSwitch />
     </div>
   );
 }

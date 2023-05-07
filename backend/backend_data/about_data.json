@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "React",
+      "desc": "Main javascript library used for the front-end",
+      "pic" : "react.png",
+      "link": "https://reactjs.org/"
+    }, {
+      "name": "Flask",
+      "desc": "Python library used for the back-end",
+      "pic" : "flask.png",
+      "link": "https://flask.palletsprojects.com/"
+    }, {
+      "name": "NameCheap",
+      "desc": "Where I bought the domain",
+      "pic" : "namecheap.png",
+      "link": "https://www.namecheap.com/"
+    }, {
+      "name": "AWS Amplify",
+      "desc": "Service that hosts the react front-end",
+      "pic" : "awsamplify.png",
+      "link": "https://aws.amazon.com/amplify/"
+    }, {
+      "name": "AWS EC2",
+      "desc": "Service that hosts the flask back-end",
+      "pic" : "awsec2.png",
+      "link": "https://aws.amazon.com/ec2/"
+    }, {
+      "name": "Visual Studio Code",
+      "desc": "IDE I use for development",
+      "pic" : "vscode.png",
+      "link": "https://code.visualstudio.com/"
+    }, {
+      "name": "GitHub",
+      "desc": "Repository location for this project",
+      "pic" : "github.png",
+      "link": "https://github.com/"
+    }, {
+      "name": "Axios",
+      "desc": "Used for contacting backend API",
+      "pic" : "axios.png",
+      "link": "https://www.npmjs.com/package/axios"
+    }
+  ]
+}

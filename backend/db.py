@@ -3,7 +3,10 @@ import time
 from models import app, db, About
 
 def populate_db():
-    populate_about()
+    with app.app_context():
+        db.drop_all()
+        db.create_all()
+        populate_db()
 
 def populate_about():
     temp = open("backend_data/about_data.json")

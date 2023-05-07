@@ -6,7 +6,7 @@ def populate_db():
     with app.app_context():
         db.drop_all()
         db.create_all()
-        populate_db()
+        populate_about()
 
 def populate_about():
     temp = open("backend_data/about_data.json")

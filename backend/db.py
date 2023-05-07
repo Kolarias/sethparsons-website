@@ -1,6 +1,6 @@
 import json
 import time
-from models import app, db, Tool
+from models import app, db, About
 
 def populate_db():
     populate_about()
@@ -17,7 +17,7 @@ def populate_about():
             "pic": tool["pic"],
             "link": tool["link"],
         }
-        db.session.add(Tool(**db_row))
+        db.session.add(About(**db_row))
         time.sleep(0.1)
     db.session.commit()
 

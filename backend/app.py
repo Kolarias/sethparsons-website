@@ -12,7 +12,7 @@ from schema import (
 # Home page
 @app.route("/")
 def home():
-    return "<h1>Seth Parsons Website API (automatic? please?)</h1>"
+    return "<h1>Seth Parsons Website API</h1>"
 
 # About page
 @app.route("/about")
@@ -39,7 +39,7 @@ def webhook():
                 # create a thread to return a response (so GitHub is happy) and start a 2s timer before exiting this app
                 # this is supposed to be run by systemd unit which will restart it automatically
                 # the [] syntax for lambda allows to have 2 statements
-                threading.Thread(target=lambda: [time.sleep(2), os.system('sudo systemctl restart myapp')]).start()
+                threading.Thread(target=lambda: [time.sleep(2), os.system('sudo systemctl restart myapp.service')]).start()
                 return "ok"
     abort(403)
 

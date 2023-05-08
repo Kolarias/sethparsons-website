@@ -15,7 +15,7 @@ def home():
     return "<h1>Seth Parsons Website API</h1>"
 
 # About page
-@app.route("/about", methods=['POST'])
+@app.route("/about")
 def about():
     query = db.session.query(About)
     result = about_schema.dump(query, many=True)
@@ -23,7 +23,7 @@ def about():
 
 # Webhook (for automatically deploying backend updates)
 # idea is from https://clement.notin.org/blog/2021/04/13/auto-deploy-python-flask-web-app-on-github-push/
-@app.route("/webhook")
+@app.route("/webhook", methods=['POST'])
 def webhook():
     # X-Hub-Signature-256: sha256=<hash>
     sig_header = 'X-Hub-Signature-256'

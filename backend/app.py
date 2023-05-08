@@ -12,7 +12,7 @@ from schema import (
 # Home page
 @app.route("/")
 def home():
-    return "<h1>Seth Parsons Website API (now automatic!)</h1>"
+    return "<h1>Seth Parsons Website API</h1>"
 
 # About page
 @app.route("/about")

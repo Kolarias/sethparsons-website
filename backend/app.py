@@ -1,6 +1,6 @@
 import os, time, hmac, hashlib, threading
 from dev_secrets import webhook_secret
-from flask import Flask, jsonify, request, Response
+from flask import Flask, jsonify, request, Response, abort
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import literal_column, or_, DOUBLE_PRECISION
 from sqlalchemy.sql import text, column, desc
@@ -40,7 +40,8 @@ def webhook():
                 # this is supposed to be run by systemd unit which will restart it automatically
                 # the [] syntax for lambda allows to have 2 statements
                 threading.Thread(target=lambda: [time.sleep(2), os.system('sudo systemctl restart myapp')]).start()
-    return "ok"
+                return "ok"
+    abort(403)
 
 # Run app
 if __name__ == "__main__":

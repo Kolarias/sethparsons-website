@@ -32,7 +32,7 @@ def webhook():
         if len(header_splitted) == 2:
             req_sign = header_splitted[1]
             # hmac apparently needs bytes and not a string
-            webhook_bytes = bytes(webhook_secret, 'latin-1')
+            webhook_bytes = webhook_secret.encode('utf-8')
             computed_sign = hmac.new(webhook_bytes, request.data, hashlib.sha256).hexdigest()
             # is the provided signature ok?
             if hmac.compare_digest(req_sign, computed_sign):

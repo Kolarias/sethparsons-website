@@ -37,7 +37,7 @@ def webhook():
                 # create a thread to return a response (so GitHub is happy) and start a 2s timer before exiting this app
                 # this is supposed to be run by systemd unit which will restart it automatically
                 # the [] syntax for lambda allows to have 2 statements
-                threading.Thread(target=lambda: [time.sleep(2), os.system('systemctl restart myapp')]).start()
+                threading.Thread(target=lambda: [time.sleep(2), os.system('sudo systemctl restart myapp')]).start()
     return "ok"
 
 # Run app

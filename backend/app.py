@@ -15,7 +15,7 @@ def home():
     return "<h1>Seth Parsons Website API (now automatic!)</h1>"
 
 # About page
-@app.route("/about")
+@app.route("/about", methods=['POST'])
 def about():
     query = db.session.query(About)
     result = about_schema.dump(query, many=True)

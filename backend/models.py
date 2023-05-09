@@ -15,5 +15,5 @@ db = SQLAlchemy(app)
 class About(db.Model):
     name = db.Column(db.String(100), primary_key=True)
     desc = db.Column(db.String(1000))
-    pic = db.Column(db.String(100))
+    pic = db.Column(db.String(1000))
     link = db.Column(db.String(1000))

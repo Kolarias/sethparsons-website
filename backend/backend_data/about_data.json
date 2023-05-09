@@ -8,17 +8,22 @@
     }, {
       "name": "Flask",
       "desc": "Python library used for the back-end",
-      "pic" : "flask.png",
+      "pic" : "",
       "link": "https://flask.palletsprojects.com/"
+    }, {
+      "name": "PostgreSQL",
+      "desc": "Database system used for backend",
+      "pic" : "postgresql.png",
+      "link": "https://www.postgresql.org/"
     }, {
       "name": "NameCheap",
       "desc": "Where I bought the domain",
-      "pic" : "namecheap.png",
+      "pic" : "https://sethparsons-website-bucket.s3.us-east-2.amazonaws.com/tool_images/namecheap.png",
       "link": "https://www.namecheap.com/"
     }, {
       "name": "AWS Amplify",
       "desc": "Service that hosts the react front-end",
-      "pic" : "awsamplify.png",
+      "pic" : "https://sethparsons-website-bucket.s3.us-east-2.amazonaws.com/tool_images/aws-amplify.png",
       "link": "https://aws.amazon.com/amplify/"
     }, {
       "name": "AWS EC2",
@@ -26,9 +31,14 @@
       "pic" : "awsec2.png",
       "link": "https://aws.amazon.com/ec2/"
     }, {
+      "name": "AWS S3",
+      "desc": "Service that stores images for this site",
+      "pic" : "test.png",
+      "link": "https://aws.amazon.com/s3/"
+    }, {
       "name": "Visual Studio Code",
       "desc": "IDE I use for development",
-      "pic" : "vscode.png",
+      "pic" : "https://sethparsons-website-bucket.s3.us-east-2.amazonaws.com/tool_images/vscode.png",
       "link": "https://code.visualstudio.com/"
     }, {
       "name": "GitHub",
@@ -38,8 +48,13 @@
     }, {
       "name": "Axios",
       "desc": "Used for contacting backend API",
-      "pic" : "axios.png",
+      "pic" : "https://sethparsons-website-bucket.s3.us-east-2.amazonaws.com/tool_images/axios.png",
       "link": "https://www.npmjs.com/package/axios"
+    }, {
+      "name": "Postman",
+      "desc": "Used for testing and documenting API",
+      "pic" : "https://sethparsons-website-bucket.s3.us-east-2.amazonaws.com/tool_images/postman.png",
+      "link": "https://www.postman.com/"
     }
   ]
 }

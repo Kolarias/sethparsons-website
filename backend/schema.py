@@ -1,11 +1,36 @@
 from flask_marshmallow import Marshmallow
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
-from models import About
+from models import AboutTool, BasicInfo, Institution, Workplace, Project, Skill
 
 mm = Marshmallow()
 
-class AboutSchema(SQLAlchemyAutoSchema):
+class AboutToolSchema(SQLAlchemyAutoSchema):
     class Meta:
-        model = About
+        model = AboutTool
 
-about_schema = AboutSchema()
+class BasicInfoSchema(SQLAlchemyAutoSchema):
+    class Meta:
+        model = BasicInfo
+
+class InstitutionSchema(SQLAlchemyAutoSchema):
+    class Meta:
+        model = Institution
+
+class WorkplaceSchema(SQLAlchemyAutoSchema):
+    class Meta:
+        model = Workplace
+
+class ProjectSchema(SQLAlchemyAutoSchema):
+    class Meta:
+        model = Project
+
+class SkillSchema(SQLAlchemyAutoSchema):
+    class Meta:
+        model = Skill
+
+about_tool_schema = AboutToolSchema()
+basic_info_schema = BasicInfoSchema()
+institution_schema = InstitutionSchema()
+workplace_schema = WorkplaceSchema()
+project_schema = ProjectSchema()
+skill_schema = SkillSchema()

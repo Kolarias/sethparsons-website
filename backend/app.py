@@ -6,7 +6,7 @@ from sqlalchemy import literal_column, or_, DOUBLE_PRECISION
 from sqlalchemy.sql import text, column, desc
 from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill
 from schema import (
-    about_schema
+    about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema
 )
 
 # Home page
@@ -19,23 +19,23 @@ def home():
 def about():
     # Query database for about page tool data, return as json
     query = db.session.query(AboutTool)
-    result = about_schema.dump(query, many=True)
+    result = about_tool_schema.dump(query, many=True)
     return jsonify({"tools": result})
 
 # Resume data
-@app.route("/about")
-def about():
+@app.route("/resume")
+def resume():
     # Query database for all types of resume data, return it as json
     binfo_query = db.session.query(BasicInfo)
-    binfo = about_schema.dump(binfo_query, many=True)
+    binfo = basic_info_schema.dump(binfo_query, many=True)
     edu_query = db.session.query(Institution)
-    edu = about_schema.dump(edu_query, many=True)
+    edu = institution_schema.dump(edu_query, many=True)
     proexp_query = db.session.query(Workplace)
-    proexp = about_schema.dump(proexp_query, many=True)
+    proexp = workplace_schema.dump(proexp_query, many=True)
     proj_query = db.session.query(Project)
-    proj = about_schema.dump(proj_query, many=True)
+    proj = project_schema.dump(proj_query, many=True)
     skills_query = db.session.query(Skill)
-    skills = about_schema.dump(skills_query, many=True)
+    skills = skill_schema.dump(skills_query, many=True)
     return jsonify( {"Basic Info": binfo},
                     {"Education": edu},
                     {"Professional Experience": proexp},

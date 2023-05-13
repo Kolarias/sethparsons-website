@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request, Response, abort
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import literal_column, or_, DOUBLE_PRECISION
 from sqlalchemy.sql import text, column, desc
-from models import app, db, About
+from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill
 from schema import (
     about_schema
 )
@@ -14,12 +14,33 @@ from schema import (
 def home():
     return "<h1>Seth Parsons Website API</h1>"
 
-# About page
+# About page tool data
 @app.route("/about")
 def about():
-    query = db.session.query(About)
+    # Query database for about page tool data, return as json
+    query = db.session.query(AboutTool)
     result = about_schema.dump(query, many=True)
     return jsonify({"tools": result})
+
+# Resume data
+@app.route("/about")
+def about():
+    # Query database for all types of resume data, return it as json
+    binfo_query = db.session.query(BasicInfo)
+    binfo = about_schema.dump(binfo_query, many=True)
+    edu_query = db.session.query(Institution)
+    edu = about_schema.dump(edu_query, many=True)
+    proexp_query = db.session.query(Workplace)
+    proexp = about_schema.dump(proexp_query, many=True)
+    proj_query = db.session.query(Project)
+    proj = about_schema.dump(proj_query, many=True)
+    skills_query = db.session.query(Skill)
+    skills = about_schema.dump(skills_query, many=True)
+    return jsonify( {"Basic Info": binfo},
+                    {"Education": edu},
+                    {"Professional Experience": proexp},
+                    {"Projects": proj},
+                    {"Key Skills": skills})
 
 # Webhook (for automatically deploying backend updates)
 # idea is from https://clement.notin.org/blog/2021/04/13/auto-deploy-python-flask-web-app-on-github-push/

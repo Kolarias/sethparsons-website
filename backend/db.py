@@ -72,7 +72,7 @@ def populate_resume():
 
     for result in skills["skills"]:
         skill = {
-            "text": skill
+            "text": result
         }
         db.session.add(Skill(**skill))
 

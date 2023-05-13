@@ -10,11 +10,11 @@
     "Education": {
       "institutions": [
         {
-          "name": "The University of Texas at Austin",
+          "name": "Bachelor's Degree at The University of Texas at Austin",
           "gpa": "3.3",
           "classes": "Data Structures, Operating Systems, Software Engineering, Compilers, Intro to Wireless Networks, Game Technology, Ethical Hacking, Artificial Intelligence, iOS Mobile Computing, Competitive Programming"
         }, {
-          "name": "Austin Community College",
+          "name": "General Studies at Austin Community College",
           "gpa": "4.0",
           "classes": "Programming Fundamentals I, II, and III, Calculus I, II, and III, Engineering Physics I and II"
         }

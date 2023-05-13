@@ -1,13 +1,13 @@
 {
-  "sections": [
-    {
-      "name": "Basic Info",
+  "sections": {
+    "Basic Info": {
+      "name": "Seth Parsons",
       "address": "Austin, TX",
       "email" : "work@sethparsons.me",
       "link": "www.linkin.com/in/sethparsons",
       "summary": "Self-motivated and ethusiastic IT professional with a strong foundation in computer literacy and a lifetime of experience finding and building long-lasting solutions to technology problems. Adept at picking up complicated concepts and programming fields quickly and building sturdy and reliable solutions with excellent communication and documentation."
-    }, {
-      "name": "Education",
+    },
+    "Education": {
       "institutions": [
         {
           "name": "The University of Texas at Austin",
@@ -19,8 +19,8 @@
           "classes": "Programming Fundamentals I, II, and III, Calculus I, II, and III, Engineering Physics I and II"
         }
       ]
-    }, {
-      "name": "Professional Experience",
+    }, 
+    "Professional Experience": {
       "workplaces": [
         {
           "title": "Information Technology Assistant",
@@ -41,8 +41,8 @@
           ]
         }
       ]
-    }, {
-      "name": "Projects",
+    }, 
+    "Projects": {
       "projects": [
         {
           "name": "FuturFindr.me",
@@ -58,8 +58,8 @@
           "desc": "Java program I wrote for ATS that helps with creating BPMN diagrams we use for our internal record-keeping tool. Mostly just a JSON find-and-replace tool with some Windows file-editing functionality, but its been extremely useful and saved us a bunch of time."
         }
       ]
-    }, {
-      "name": "Key Skills",
+    }, 
+    "Key Skills": {
       "skills": [
         "Python, Java, C++",
         "Web Development with React.js and Flask",
@@ -68,5 +68,5 @@
         "Literate and knowledgable about nearly every computing field"
       ]
     }
-  ]
+  }
 }

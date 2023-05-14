@@ -34,7 +34,7 @@ function Contact() {
             <Image className="main-img" src="https://raw.githubusercontent.com/Kolarias/sethparsons-website/main/backend/backend_data/images/me3.jpg"/>
             <h5>
                 Email me at:
-                <a href={linkList.email} target="_blank" rel="noreferrer"> {linkList.email}</a>
+                <a href={linkList.email} target="_blank" rel="noreferrer"> work@sethparsons.me</a>
             </h5>
             <div className="links">
                 {load ? (

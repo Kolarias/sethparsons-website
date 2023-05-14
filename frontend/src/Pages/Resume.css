@@ -1,7 +1,31 @@
+.container {
+    padding-top: 15px;
+}
+
 .basic-info {
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.basic-info>.row>.col>h4 {
+    font-size: 15px;
+}
+
+.education-experience {
     text-align: left;
 }
 
-.basic-info>h4 {
+.education-experience>.row {
+    padding-top: 5px;
+}
+
+.education-experience>.row>.col>h4 {
     font-size: 15px;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
 }

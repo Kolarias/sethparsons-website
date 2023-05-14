@@ -1,7 +1,6 @@
 import React, { useState, useEffect }  from "react";
 import { Container, Col, Row, Image, Card, Button} from 'react-bootstrap'
 import { backendApi } from "../Assets/Constants";
-import Me from "../Assets/me.png";
 import "./About.css";
 
 function About() {
@@ -29,7 +28,7 @@ function About() {
 
     return (
         <Container style={{paddingTop: '20px'}}>
-            <Card.Img src={Me} style={{height:280, width:250}}/>
+            <Card.Img src="https://raw.githubusercontent.com/Kolarias/sethparsons-website/main/backend/backend_data/images/me.png" style={{height:280, width:250}}/>
             <Container className='p-4'>
             <h1 className='d-flex justify-content-center'>Hi! I'm Seth Parsons.</h1>
             <p style={{paddingTop: '15px'}}>

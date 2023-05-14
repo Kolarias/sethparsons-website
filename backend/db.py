@@ -40,6 +40,7 @@ def populate_resume():
     # Go through all resume sections and commit data for each one
     basic_info = {
         "name": binfo["name"],
+        "title": binfo["title"],
         "address": binfo["address"],
         "email": binfo["email"],
         "link": binfo["link"],

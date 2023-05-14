@@ -27,6 +27,7 @@ class AboutTool(db.Model):
 '''
 class BasicInfo(db.Model):
     name = db.Column(db.String(100), primary_key=True)
+    title = db.Column(db.String(100))
     address = db.Column(db.String(1000))
     email = db.Column(db.String(100))
     link = db.Column(db.String(1000))

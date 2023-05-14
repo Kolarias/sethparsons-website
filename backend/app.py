@@ -48,7 +48,7 @@ def contact():
     # Return links as json
     query = db.session.query(Links)
     result = links_schema.dump(query, many=True)
-    return jsonify({result})
+    return jsonify({"links": result})
 
 # Webhook (for automatically deploying backend updates)
 # idea is from https://clement.notin.org/blog/2021/04/13/auto-deploy-python-flask-web-app-on-github-push/

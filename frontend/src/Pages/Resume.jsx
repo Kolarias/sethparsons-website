@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from "react";
 import { backendApi } from "../Assets/Constants";
-import { Container, Col, Row, Image, Card, Button} from 'react-bootstrap'
+import { Container, Stack, Col, Row, Image, Card, Button} from 'react-bootstrap'
+import "./Resume.css";
 
 function Resume() {
     // State
@@ -29,11 +30,20 @@ function Resume() {
         <Container style={{paddingTop: '20px'}}> 
             {load ? (
                 <div>
-                    <h3 className='d-flex justify-content-left'>{resume[0]['Basic Info'][0].name}</h3>
-                    <h4>{resume[0]['Basic Info'][0].address}</h4>
-                    <h4>{resume[0]['Basic Info'][0].email}</h4>
-                    <h4>{resume[0]['Basic Info'][0].link}</h4>
-                    <h4>{resume[0]['Basic Info'][0].summary}</h4>
+                    <Container className='basic-info'>
+                        <h3>{resume[0]['Basic Info'][0].name}</h3>
+                        <h4>{resume[0]['Basic Info'][0].address}</h4>
+                        <h4>{resume[0]['Basic Info'][0].email}</h4>
+                        <h4>{resume[0]['Basic Info'][0].link}</h4>
+                        <h4>{resume[0]['Basic Info'][0].summary}</h4>
+                    </Container>
+                    <Container className='education'>
+                        {resume[1]['Education'].map((institution) => {
+                            return (
+                                null
+                            );
+                        })}
+                    </Container>
                 </div>
             ) : null}
         </Container>

@@ -1,0 +1,7 @@
+.basic-info {
+    text-align: left;
+}
+
+.basic-info>h4 {
+    font-size: 15px;
+}

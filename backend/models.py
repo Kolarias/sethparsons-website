@@ -36,11 +36,13 @@ class Institution(db.Model):
     name = db.Column(db.String(100), primary_key=True)
     gpa = db.Column(db.String(5))
     classes = db.Column(db.String(1000))
+    date = db.Column(db.String(100))
 
 class Workplace(db.Model):
     company = db.Column(db.String(100), primary_key=True)
     title = db.Column(db.String(100))
     points = db.Column(ARRAY(db.String(1000)))
+    date = db.Column(db.String(100))
 
 class Project(db.Model):
     name = db.Column(db.String(100), primary_key=True)

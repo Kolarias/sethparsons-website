@@ -11,10 +11,12 @@
       "institutions": [
         {
           "name": "Bachelor's Degree at The University of Texas at Austin",
+          "date": "January 2020 - August 2023",
           "gpa": "3.3",
           "classes": "Data Structures, Operating Systems, Software Engineering, Compilers, Intro to Wireless Networks, Game Technology, Ethical Hacking, Artificial Intelligence, iOS Mobile Computing, Competitive Programming"
         }, {
           "name": "General Studies at Austin Community College",
+          "date": "August 2018 - May 2020",
           "gpa": "4.0",
           "classes": "Programming Fundamentals I, II, and III, Calculus I, II, and III, Engineering Physics I and II"
         }
@@ -25,6 +27,7 @@
         {
           "title": "Information Technology Assistant",
           "company": "ATS Engineers, Inspectors, and Surveyors",
+          "date": "June 2018 - Present",
           "points": [
               "Deployed hundreds of Windows 10 and Android tablets to building inspectors",
               "Solved various I.T. issues in-office and from home",
@@ -35,6 +38,7 @@
         }, {
           "title": "Delivery Driver",
           "company": "Jet's Pizza",
+          "date": "June 2018 - August 2020",
           "points": [
               "Learned time management and various interpersonal skills",
               "Handled stressful situations and difficult customers"

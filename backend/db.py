@@ -50,6 +50,7 @@ def populate_resume():
     for result in edu["institutions"]:
         school = {
             "name": result["name"],
+            "date": result["date"],
             "gpa": result["gpa"],
             "classes": result["classes"]
         }
@@ -59,6 +60,7 @@ def populate_resume():
         work = {
             "company": result["company"],
             "title": result["title"],
+            "date": result["date"],
             "points": result["points"]
         }
         db.session.add(Workplace(**work))

@@ -36,7 +36,7 @@ def resume():
     proj = project_schema.dump(proj_query, many=True)
     skills_query = db.session.query(Skill)
     skills = skill_schema.dump(skills_query, many=True)
-    return jsonify( {"Basic Info": binfo},
+    return jsonify( {"Basic Info": binfo[0]},
                     {"Education": edu},
                     {"Professional Experience": proexp},
                     {"Projects": proj},

@@ -11,7 +11,7 @@
     "Education": {
       "institutions": [
         {
-          "name": "Bachelor's Degree at The University of Texas at Austin",
+          "name": "Bachelor's Degree in Computer Science at The University of Texas at Austin",
           "date": "January 2020 - August 2023",
           "gpa": "3.3",
           "classes": "Data Structures, Operating Systems, Software Engineering, Compilers, Intro to Wireless Networks, Game Technology, Ethical Hacking, Artificial Intelligence, iOS Mobile Computing, Competitive Programming"
@@ -70,7 +70,7 @@
         "Web Development with React.js and Flask",
         "Git, Docker",
         "Atlassian Suite, Microsoft Office",
-        "Literate and knowledgable about nearly every computing field"
+        "Literate and knowledgable about a wide variety of computing fields"
       ]
     }
   }

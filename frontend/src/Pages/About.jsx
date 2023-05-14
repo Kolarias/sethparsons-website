@@ -69,7 +69,7 @@ function About() {
             <p>
                 Once I graduated, I immediately applied for community college at ACC and got my A+ Computer Technician
                 certification in hopes of being able to pay for college with an IT job. I got hired at ATS shortly after
-                and have been working there ever since while attending college. In 2020 I transferred to the Univesity 
+                and have been working there ever since while attending college. In 2020 I transferred to the University 
                 of Texas at Austin to start a bachelor's degree in Computer Science and will be graduating in 2023.
             </p>
             <p>

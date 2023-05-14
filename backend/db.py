@@ -1,5 +1,5 @@
 import json
-from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill
+from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links
 
 def populate_db():
     with app.app_context():
@@ -7,6 +7,7 @@ def populate_db():
         db.create_all()
         populate_about()
         populate_resume()
+        populate_contact()
 
 def populate_about():
     temp = open("backend_data/about_data.json")
@@ -80,6 +81,23 @@ def populate_resume():
         db.session.add(Skill(**skill))
 
     # Commit all to database
+    db.session.commit()
+
+def populate_contact():
+    temp = open("backend_data/contact_data.json")
+    contact_data = json.load(temp)
+    temp.close()
+
+    # put all contact links in database
+    db_row = {
+        "email": contact_data["email"],
+        "linkedin": contact_data["linkedin"],
+        "github": contact_data["github"],
+        "facebook": contact_data["facebook"],
+        "youtube": contact_data["youtube"],
+        "twitter": contact_data["twitter"]
+    }
+    db.session.add(Links(**db_row))
     db.session.commit()
 
 if __name__ == "__main__":

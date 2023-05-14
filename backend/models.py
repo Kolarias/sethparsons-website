@@ -51,3 +51,11 @@ class Project(db.Model):
 
 class Skill(db.Model):
     text = db.Column(db.String(100), primary_key=True)
+
+class Links(db.Model):
+    email = db.Column(db.String(100), primary_key=True)
+    linkedin = db.Column(db.String(100))
+    github = db.Column(db.String(100))
+    facebook = db.Column(db.String(100))
+    youtube = db.Column(db.String(100))
+    twitter = db.Column(db.String(100))

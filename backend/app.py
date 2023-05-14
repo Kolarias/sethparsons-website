@@ -4,9 +4,9 @@ from flask import Flask, jsonify, request, Response, abort
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import literal_column, or_, DOUBLE_PRECISION
 from sqlalchemy.sql import text, column, desc
-from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill
+from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links
 from schema import (
-    about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema
+    about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema, links_schema
 )
 
 # Home page
@@ -41,6 +41,14 @@ def resume():
                     {"Professional Experience": proexp},
                     {"Projects": proj},
                     {"Key Skills": skills})
+
+# Contact links
+@app.route("/contact")
+def contact():
+    # Return links as json
+    query = db.session.query(Links)
+    result = links_schema.dump(query, many=True)
+    return jsonify({result})
 
 # Webhook (for automatically deploying backend updates)
 # idea is from https://clement.notin.org/blog/2021/04/13/auto-deploy-python-flask-web-app-on-github-push/

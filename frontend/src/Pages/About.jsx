@@ -93,7 +93,7 @@ function About() {
                 <a href="https://github.com/Kolarias/sethparsons-website" target="_blank" rel="noreferrer">
                     <Button> Github Repo </Button>
                 </a> {" "}
-                <a target="_blank" rel="noreferrer">
+                <a href="https://documenter.getpostman.com/view/11520528/2s93kxcmSQ" target="_blank" rel="noreferrer">
                     <Button> API Docs </Button>
                 </a>
             </div>

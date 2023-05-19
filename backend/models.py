@@ -23,6 +23,21 @@ class AboutTool(db.Model):
     link = db.Column(db.String(1000))
 
 '''
+    Database model for Projects and Hobbies displayed on their respective pages.
+'''
+class ProjectInstance(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    desc = db.Column(db.String(10000))
+    link = db.Column(db.String(1000))
+    pics = db.Column(ARRAY(db.String(1000)))
+class HobbyInstance(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    desc = db.Column(db.String(10000))
+    pics = db.Column(ARRAY(db.String(1000)))
+
+'''
     Database models for "Resume" page. Should be self-explanatory.
 '''
 class BasicInfo(db.Model):
@@ -52,6 +67,9 @@ class Project(db.Model):
 class Skill(db.Model):
     text = db.Column(db.String(100), primary_key=True)
 
+'''
+    Database model for "Links" page.
+'''
 class Links(db.Model):
     email = db.Column(db.String(100), primary_key=True)
     linkedin = db.Column(db.String(100))

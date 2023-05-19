@@ -1,5 +1,5 @@
 import json
-from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links
+from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links, ProjectInstance, HobbyInstance
 
 def populate_db():
     with app.app_context():
@@ -7,6 +7,8 @@ def populate_db():
         db.create_all()
         populate_about()
         populate_resume()
+        populate_projects()
+        populate_hobbies()
         populate_contact()
 
 def populate_about():
@@ -25,12 +27,51 @@ def populate_about():
         db.session.add(AboutTool(**db_row))
     db.session.commit()
 
+def populate_projects():
+    temp = open("backend_data/project_data.json")
+    project_data = json.load(temp)
+    temp.close()
+    id = 1
+
+    # go through all returned project results and commit to db
+    # use incrementing integer for id numbers
+    for project in project_data["results"]:
+        db_row = {
+            "id": id,
+            "name": project["name"],
+            "desc": project["desc"],
+            "link": project["link"],
+            "pics": project["pics"]
+        }
+        db.session.add(ProjectInstance(**db_row))
+        id += 1
+    db.session.commit()
+
+def populate_hobbies():
+    temp = open("backend_data/hobby_data.json")
+    hobby_data = json.load(temp)
+    temp.close()
+    id = 1
+
+    # go through all returned project results and commit to db
+    # use incrementing integer for id numbers
+    for hobby in hobby_data["results"]:
+        db_row = {
+            "id": id,
+            "name": hobby["name"],
+            "desc": hobby["desc"],
+            "pics": hobby["pics"]
+        }
+        db.session.add(HobbyInstance(**db_row))
+        id += 1
+    db.session.commit()
+
 def populate_resume():
     temp = open("backend_data/resume_data.json")
     resume_data = json.load(temp)
     temp.close()
 
-    # quick aliases for each resume section
+    # quick aliases for each section of my resume data
     # hardcoded, but that's reasonable since I control everything
     binfo = resume_data["sections"]["Basic Info"]
     edu = resume_data["sections"]["Education"]

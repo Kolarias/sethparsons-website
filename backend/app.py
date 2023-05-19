@@ -4,9 +4,9 @@ from flask import Flask, jsonify, request, Response, abort
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import literal_column, or_, DOUBLE_PRECISION
 from sqlalchemy.sql import text, column, desc
-from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links
+from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Project, Skill, Links, ProjectInstance, HobbyInstance
 from schema import (
-    about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema, links_schema
+    about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema, links_schema, project_instance_schema, hobby_instance_schema
 )
 
 # Home page
@@ -21,6 +21,22 @@ def about():
     query = db.session.query(AboutTool)
     result = about_tool_schema.dump(query, many=True)
     return jsonify({"tools": result})
+
+# Projects data
+@app.route("/projects")
+def projects():
+    # Query database for project data, return as json
+    query = db.session.query(ProjectInstance)
+    result = project_instance_schema.dump(query, many=True)
+    return jsonify({"projects": result})
+
+# Hobbies data
+@app.route("/hobbies")
+def hobbies():
+    # Query database for hobby data, return as json
+    query = db.session.query(HobbyInstance)
+    result = hobby_instance_schema.dump(query, many=True)
+    return jsonify({"hobbies": result})
 
 # Resume data
 @app.route("/resume")

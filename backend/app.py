@@ -8,6 +8,7 @@ from models import app, db, AboutTool, BasicInfo, Institution, Workplace, Projec
 from schema import (
     about_tool_schema, basic_info_schema, institution_schema, workplace_schema, project_schema, skill_schema, links_schema, project_instance_schema, hobby_instance_schema
 )
+import json
 
 # Home page
 @app.route("/")
@@ -30,6 +31,17 @@ def projects():
     result = project_instance_schema.dump(query, many=True)
     return jsonify({"projects": result})
 
+# Get specific project
+@app.route("/projects/<int:instance_id>")
+def get_project(instance_id):
+    project = ProjectInstance.query.filter_by(id=instance_id).first()
+    if project == None:
+        return Response(
+            json.dumps({"error": "Invalid project ID"}), mimetype="application/json"
+        )
+    result = project_instance_schema.dump(project)
+    return jsonify({"project": result})
+
 # Hobbies data
 @app.route("/hobbies")
 def hobbies():
@@ -37,6 +49,17 @@ def hobbies():
     query = db.session.query(HobbyInstance)
     result = hobby_instance_schema.dump(query, many=True)
     return jsonify({"hobbies": result})
+
+# Get specific hobby
+@app.route("/hobbies/<int:instance_id>")
+def get_hobby(instance_id):
+    hobby = HobbyInstance.query.filter_by(id=instance_id).first()
+    if hobby == None:
+        return Response(
+            json.dumps({"error": "Invalid hobby ID"}), mimetype="application/json"
+        )
+    result = hobby_instance_schema.dump(hobby)
+    return jsonify({"hobby": result})
 
 # Resume data
 @app.route("/resume")

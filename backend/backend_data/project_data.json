@@ -20,13 +20,13 @@
       ]
     }, {
       "name": "Star Fox Forever",
-      "desc": "",
+      "desc": "This project was my final assignment for my Game Technology class at UT. I made it as tribute to Star Fox 64, an absolute classic of a game that shaped my childhood in a big way. It's an on-rails shooter with an infinite, procedurally-generated level, much like mobile infinite-runner games. I made it from scratch entirely by myself using the Godot engine, and while it's complete for the sake of the class I may return to it later to flesh out the mechanics and the level generation. It was a lot of fun to work on!",
       "link": "https://github.com/Kolarias/Star-Fox-Forever",
       "pics": [
-        "",
-        "",
-        "",
-        ""
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/StarFoxForever/1.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/StarFoxForever/2.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/StarFoxForever/3.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/StarFoxForever/4.png?raw=true"
       ]
     }, {
       "name": "enable_extensions.py",

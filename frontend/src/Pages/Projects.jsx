@@ -38,7 +38,7 @@ function Projects() {
                                     <Card.Img variant="top" src={Project.pics[0]} />
                                     <Card.Body>
                                         <Card.Title>{Project.name}</Card.Title>
-                                        <a href={`/Projects/${Project.id}`} className="stretched-link"></a>
+                                        <a href={`/projects/${Project.id}`} className="stretched-link"></a>
                                     </Card.Body>
                                 </Card>
                             </Col>

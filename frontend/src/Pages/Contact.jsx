@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from "react";
-import { Container, Col, Row, Image, Card, Button} from 'react-bootstrap'
+import { Container, Col, Row, Image} from 'react-bootstrap'
 import { backendApi } from "../Assets/Constants";
 import "./Contact.css";
 
@@ -41,27 +41,27 @@ function Contact() {
                     <Row>
                         <Col>
                             <a href={linkList.linkedin} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/LinkedIN.png?raw=true"/>
+                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/LinkedIN.png?raw=true" alt="LinkedIn"/>
                             </a>
                         </Col>
                         <Col>
                             <a href={linkList.github} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Github_black.png?raw=true"/>
+                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Github_black.png?raw=true" alt="Github"/>
                             </a>
                         </Col>
                         <Col>
                             <a href={linkList.facebook} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Facebook.png?raw=true"/>
+                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Facebook.png?raw=true" alt="Facebook"/>
                             </a>
                         </Col>
                         <Col>
                             <a href={linkList.youtube} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Youtube.png?raw=true"/>
+                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Youtube.png?raw=true" alt="YouTube"/>
                             </a>
                         </Col>
                         <Col>
                             <a href={linkList.twitter} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Twitter.png?raw=true"/>
+                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Twitter.png?raw=true" alt="Twitter"/>
                             </a>
                         </Col>
                     </Row>

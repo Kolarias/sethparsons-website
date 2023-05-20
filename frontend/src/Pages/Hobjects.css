@@ -1,0 +1,21 @@
+.stretched-link::after {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.card>img {
+    width: 350px;
+    height: 225px;
+    object-fit:cover;
+    position: relative;
+    top: 0;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}

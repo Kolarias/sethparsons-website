@@ -2,21 +2,23 @@
   "results": [
     {
       "name": "SethParsons-Website",
-      "desc": "",
-      "link": "",
+      "desc": "The website you're currently viewing! It's a Flask.js app that talks to a Flask backend using a PostgreSQL database (similar to what I did for FuturFindr at UT). I made it to help with job hunting and to continue practicing my web development skills.",
+      "link": "https://github.com/Kolarias/sethparsons-website",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/SethParsonsWebsite/1.png?raw=true",
-        "",
-        ""
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/SethParsonsWebsite/2.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/SethParsonsWebsite/3.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/SethParsonsWebsite/4.png?raw=true"
       ]
     }, {
       "name": "FuturFindr.me",
-      "desc": "",
-      "link": "",
+      "desc": "FuturFindr.me was a semester-long project four teammates and I completed in my Software Engineering class at UT. Similar to this website, it consists of a React.js frontend with a Flask backend that talks to a PostrgreSQL database. The purpose of the website was to provide users with a place where they could plan their future by searching for jobs, housing, and education within the same area. We got our data by scraping public APIs and then provided pages where users could sort and search through the data in our database for what they wished. I was the main backend and database programmer for the project, and while some of the deadlines were pretty grueling I ultimately learned a lot about web development from completing it.",
+      "link": "https://gitlab.com/ritzyo/cs373-idb-17",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/FuturFindr/1.png?raw=true",
-        "",
-        ""
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/FuturFindr/2.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/FuturFindr/3.png?raw=true",
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/FuturFindr/4.png?raw=true"
       ]
     }, {
       "name": "Star Fox Forever",
@@ -30,21 +32,19 @@
       ]
     }, {
       "name": "enable_extensions.py",
-      "desc": "",
-      "link": "",
+      "desc": "enable_extensions.py is the result of a project in my Ethical Hacking class at UT where I was tasked with creating a remote shell backdoor on Linux. Assuming the attacker already has root access to the machine, the script installs a backdoor as both a cron job and part of the root users’ .bashrc file, and then also creates a service that checks if those two backdoors still exist and reinstalls them if they don’t. Everything is trickily named to avoid detection. I got full credit for this and had a lot of fun writing and testing it! All on a virtual machine, of course.",
+      "link": "https://github.com/Kolarias/enable_extensions",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/EnableExtensions/1.png?raw=true",
-        "",
-        ""
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/EnableExtensions/2.png?raw=true"
       ]
     }, {
       "name": "BPMN Bulk Editing Tool",
-      "desc": "",
+      "desc": "BPMN Bulk Editing Tool is a Java program I wrote for ATS in order to speed up part of our workflow behind the internal record-keeping tool we were creating. Before I made this tool, we were manually editing a bunch of JSON documents (hundreds of them) to implement changes and updates and this tool helped us deploy those changes much, much faster. It’s more or less just a glorified text find-and-replace tool with file editing functions, but its been extremely useful!",
       "link": "",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/BPMNBulkEditing/1.png?raw=true",
-        "",
-        ""
+        "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/projects/BPMNBulkEditing/2.png?raw=true"
       ]
     }
   ]

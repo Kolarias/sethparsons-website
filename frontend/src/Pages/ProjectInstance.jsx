@@ -48,9 +48,12 @@ function ProjectInstance() {
                     </Slide>
                     <p style={{paddingTop: '20px'}}>{Project.desc}</p>
                     <div className="buttons">
-                        <a href={Project.link} target="_blank" rel="noreferrer">
-                            <Button> Repo Link </Button>
-                        </a> {" "}
+                        { Project.link.length > 0 ? (
+                                <a href={Project.link} target="_blank" rel="noreferrer">
+                                    <Button> Repo Link </Button>
+                                </a>
+                            ) : (null)
+                        }
                         <a href="javascript:history.back()" rel="noreferrer">
                             <Button> Back to Projects </Button>
                         </a>

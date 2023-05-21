@@ -2,7 +2,7 @@
   "results": [
     {
       "name": "Retro Gaming",
-      "desc": "",
+      "desc": "Starting with the N64 (since I grew up with it), I’ve really enjoyed collecting and playing old video games in the best possible way. Using my CRT TVs I’ve recently acquired and my various modded consoles to elevate the experience, I’ve played through my old favorites like Pokémon Stadium, Super Mario 64, Star Fox 64, Sonic 2, Super Mario World, Halo CE, Super Smash Bros. Melee, various Dance Dance Revolution games on the PS2, and much much more. There’s really nothing like playing through old classics today on the TVs and consoles the developers intended, but with modern enhancements like increased video quality, wireless controllers, and flash carts.",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/hobbies/RetroGaming/1.png?raw=true",
         "",
@@ -10,7 +10,7 @@
       ]
     }, {
       "name": "CRT Repair and Maintenance",
-      "desc": "",
+      "desc": "I originally only picked up an old CRT TV for specific retro games, but recently I’ve really taken a liking to them! CRT’s have various benefits over most LCD TV’s, like better black levels, better motion clarity, and reduced input lag. This makes them really good for old games, but I also think they’re fantastic for old movies and even certain modern viewing applications. They’re certainly super heavy, and not as sharp as pixel-perfect LCDs, but there’s something to be said about that retro charm of a boxy TV and their analog nature makes tuning/refurbishing them super fun for me. I recently picked up my end-game HD CRT, the Sony Wega KD-30XS955, and I’m hoping to find a good standard-def Trinitron to replace my current SD Toshiba set (and maybe a good PC CRT monitor too).",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/hobbies/CRTRepairMaintenance/1.png?raw=true",
         "",
@@ -18,7 +18,7 @@
       ]
     }, {
       "name": "PC Building",
-      "desc": "",
+      "desc": "I’ve loved fiddling around with computer hardware since I was very young, and it was a big goal of mine to eventually build and use my own custom computer. Since then, I’ve built 3 from scratch – two in high school, one in college – and they’ve all served me very well. The first one included an AMD FX-8350 CPU with an R9 280x graphics card, the second one used an Intl i7 4790k with an R9 390 GPU, and my current machine uses an AMD Ryzen 3700x with an RTX 2080 GPU. I’ve performed upgrades between the machines, of course – I had a GTX 1070ti that I used for a while, and I’ve switched between all kinds of storage devices and RAM sticks – but I’m pretty proud of all my machines and very confident in my PC building skill now.",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/hobbies/PCBuilding/1.png?raw=true",
         "",
@@ -26,7 +26,7 @@
       ]
     }, {
       "name": "Electronics Repair",
-      "desc": "",
+      "desc": "I’ve pretty much always been interested in maintaining my electronics and keeping them clean, but only recently have I been able to do more in-depth repairs. My PC building experience has made things like replacing thermal paste and swapping storage drives in devices super easy, but recently I’ve dived more into repairs that require soldering, removing strong adhesives, or need very tiny and delicate handling skills. For instance, I’ve repaired some old Optiplexes that needed capacitors replaced, replaced phone screens and batteries that are glued into the devices, and attempted repairing old iPods and mini game consoles that use tiny, fragile ribbon cables and PCBs. I find it really fulfilling and fun to keep my devices in working order without having to pay expensive repair bills, all while learning more about how the device works along the way. ",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/hobbies/ElectronicsRepair/1.png?raw=true",
         "",
@@ -34,7 +34,7 @@
       ]
     }, {
       "name": "Console Modding",
-      "desc": "",
+      "desc": "Soft-modding video game consoles has been something I’ve done for a long time in order to unlock more functionality from my devices, but only recently have I gotten into hardware modding. It started with using the LetterBomb exploit on the Wii and installing FreeHDBoot on my PS2, but recently I’ve also learned how to upgrade the hard drive of an original Xbox while softmodding it and even how to do some light soldering to RGH mod an Xbox 360. I also did some soldering on my Nintendo 64 to restore RGB output to its video port, and hope that soon I’ll be able to install and HDMI port on both my N64 and my Wii by hardmodding.",
       "pics": [
         "https://github.com/Kolarias/sethparsons-website/blob/main/backend/backend_data/images/hobbies/ConsoleModding/1.png?raw=true",
         "",

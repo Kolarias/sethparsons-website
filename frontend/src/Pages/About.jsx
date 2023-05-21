@@ -37,8 +37,7 @@ function About() {
             <p>
                 I built this website as a means of practicing my web-dev skills and to show off my interests and 
                 projects all in one place. Feel free to look at what I've been up to or get in contact with me 
-                using the navigation bar above! (Note that this website is still under construction and certain things 
-                may be missing).
+                using the navigation bar above!
             </p>
             </Container>
             <div className="title-holder">
@@ -78,10 +77,10 @@ function About() {
             <div className="title-holder">
                 <h3>More About this Website</h3>
                 <p>
-                    This website is a React.js application that talks to a Flask backend for most of its data. It's based
-                    largely on the work I did on FuturFindr in my Software Engineering class at UT (which you can see more
-                    about in the Projects page of this site). All of my code is available on Github at the link below and
-                    you can access the backend API at
+                    This website is a React.js application that talks to a Flask backend for most of its data. It was built
+                    from scratch with code based largely on the work I did on FuturFindr in my Software Engineering class
+                    at UT (which you can see more about in the Projects page of this site). All of my code is available
+                    on Github at the link below and you can access the backend API at
                     <a href="https://api.sethparsons.me" target="_blank" rel="noreferrer"> api.sethparsons.me</a>.
                 </p>
                 <p>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from "react";
 import { backendApi } from "../Assets/Constants";
-import { Container, Stack, Col, Row, Image} from 'react-bootstrap'
+import { Container, Col, Row, Image} from 'react-bootstrap'
 import "./Resume.css";
 
 function Resume() {

@@ -27,7 +27,7 @@ function Projects() {
     }, [ProjectList, load]);
 
     return (
-        <>
+        <div className="root">
         <Container>
             {load ? (
                 <Row style={{justifyContent: "center"}}>
@@ -49,7 +49,7 @@ function Projects() {
                 <Spinner animation="border" variant="info" />
             )}
         </Container>
-        </>
+        </div>
     );
 }
 

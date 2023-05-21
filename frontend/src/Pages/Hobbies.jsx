@@ -27,7 +27,7 @@ function Hobbies() {
     }, [hobbyList, load]);
 
     return (
-        <>
+        <div className="root">
         <Container>
             {load ? (
                 <Row style={{justifyContent: "center"}}>
@@ -49,7 +49,7 @@ function Hobbies() {
                 <Spinner animation="border" variant="info" />
             )}
         </Container>
-        </>
+        </div>
     );
 }
 

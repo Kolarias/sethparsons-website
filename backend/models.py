@@ -76,4 +76,3 @@ class Links(db.Model):
     github = db.Column(db.String(100))
     facebook = db.Column(db.String(100))
     youtube = db.Column(db.String(100))
-    twitter = db.Column(db.String(100))

@@ -135,8 +135,7 @@ def populate_contact():
         "linkedin": contact_data["linkedin"],
         "github": contact_data["github"],
         "facebook": contact_data["facebook"],
-        "youtube": contact_data["youtube"],
-        "twitter": contact_data["twitter"]
+        "youtube": contact_data["youtube"]
     }
     db.session.add(Links(**db_row))
     db.session.commit()

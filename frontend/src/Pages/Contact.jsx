@@ -59,11 +59,6 @@ function Contact() {
                                 <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Youtube.png?raw=true" alt="YouTube"/>
                             </a>
                         </Col>
-                        <Col>
-                            <a href={linkList.twitter} target="_blank" rel="noreferrer">
-                                <img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Color/Twitter.png?raw=true" alt="Twitter"/>
-                            </a>
-                        </Col>
                     </Row>
                 ) : null}
             </div>

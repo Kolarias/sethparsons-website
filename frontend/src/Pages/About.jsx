@@ -32,7 +32,7 @@ function About() {
             <Container className='p-4'>
             <h1 className='d-flex justify-content-center'>Hi! I'm Seth Parsons.</h1>
             <p style={{paddingTop: '15px'}}>
-                I'm a technology enthusiast and aspiring programmer. Welcome to my personal website!
+                I'm a technology enthusiast and software developer. Welcome to my personal website!
             </p>
             <p>
                 I built this website as a means of practicing my web-dev skills and to show off my interests and 

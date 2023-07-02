@@ -4,6 +4,7 @@ from sqlalchemy.dialects.postgresql import ARRAY
 from flask_cors import CORS
 from dev_secrets import database_link
 
+# app and database stuff
 app = Flask(__name__)
 CORS(app)
 app.debug = True

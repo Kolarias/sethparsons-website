@@ -61,6 +61,17 @@ function Resume() {
                         })}
                     </Container>
                     <Container className='education-experience'>
+                        <h3>Skills</h3>
+                        <p></p>
+                        <ul>
+                        {resume[4]['Key Skills'].map((skill) => {
+                            return (
+                                <li>{skill.text}</li>
+                            );
+                        })}
+                        </ul>
+                    </Container>
+                    <Container className='education-experience'>
                         <h3>Professional Experience</h3>
                         {resume[2]['Professional Experience'].map((workplace) => {
                             return (
@@ -89,16 +100,6 @@ function Resume() {
                         {resume[3]['Projects'].map((project) => {
                             return (
                                 <li><b>{project.name}</b> - {project.desc}</li>
-                            );
-                        })}
-                        </ul>
-                    </Container>
-                    <Container className='education-experience'>
-                        <h3>Key Skills</h3>
-                        <ul>
-                        {resume[4]['Key Skills'].map((skill) => {
-                            return (
-                                <li>{skill.text}</li>
                             );
                         })}
                         </ul>

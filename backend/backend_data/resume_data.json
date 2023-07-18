@@ -2,25 +2,37 @@
   "sections": {
     "Basic Info": {
       "name": "Seth Parsons",
-      "title": "Junior Software Developer",
+      "title": "Software Developer",
       "address": "Austin, TX",
       "email" : "work@sethparsons.me",
       "link": "www.linkedin.com/in/sethparsons",
-      "summary": "Self-motivated and enthusiastic IT professional with a strong foundation in computer literacy and a lifetime of experience finding and building long-lasting solutions to technology problems. Adept at picking up complicated concepts and programming fields quickly and building sturdy and reliable solutions with excellent communication and documentation."
+      "summary": "Self-motivated and enthusiastic I.T. professional with a strong foundation in computer literacy and a broad range of knowledge regarding technology and programming. Adept at quickly understanding and integrating into established systems and building sturdy, well-documented software solutions for both end users and other developers."
     },
     "Education": {
       "institutions": [
         {
           "name": "Bachelor's Degree in Computer Science at The University of Texas at Austin",
           "date": "January 2020 - August 2023",
-          "gpa": "3.3",
-          "classes": "Data Structures, Operating Systems, Software Engineering, Compilers, Intro to Wireless Networks, Game Technology, Ethical Hacking, Artificial Intelligence, iOS Mobile Computing, Competitive Programming"
+          "gpa": "3.4",
+          "classes": "Operating Systems, Software Engineering, Ethical Hacking, Artificial Intelligence"
         }, {
           "name": "General Studies at Austin Community College",
           "date": "August 2018 - May 2020",
           "gpa": "4.0",
-          "classes": "Programming Fundamentals I, II, and III, Calculus I, II, and III, Engineering Physics I and II"
+          "classes": "Programming Fundamentals, Calculus, Engineering Physics"
         }
+      ]
+    }, 
+    "Key Skills": {
+      "skills": [
+        "Object-Oriented Programming - Advanced",
+        "Software Troubleshooting and Testing - Advanced",
+        "Web Development with Continuous Integration/Deployment - Intermediate",
+        "Microsoft Office, Adobe Software, Atlassian Software Suites - Advanced",
+        "Hardware Installation, Repair, and Maintenance - Advanced",
+        "Java, Python, C++ - Advanced (5+ years experience)",
+        "Swift, Javascript, HTML/CSS - Intermediate (1-2 years experience)",
+        "SQL, C#, x86 ASM - Basic"
       ]
     }, 
     "Professional Experience": {
@@ -30,19 +42,11 @@
           "company": "ATS Engineers, Inspectors, and Surveyors",
           "date": "June 2018 - Present",
           "points": [
-              "Deployed hundreds of Windows 10 and Android tablets to building inspectors",
-              "Solved various I.T. issues in-office and from home",
-              "Assisted contracted software development team in building, maintaining, and documenting internal record-keeping tool",
-              "Used Git, Java, Adobe Acrobat, and multiple Atlassian tools to help said team",
-              "Also learned and used Spring Boot, IntelliJ, Docker, and other software development tools"
-          ]
-        }, {
-          "title": "Delivery Driver",
-          "company": "Jet's Pizza",
-          "date": "June 2018 - August 2020",
-          "points": [
-              "Learned time management and various interpersonal skills",
-              "Handled stressful situations and difficult customers"
+              "Assisted with every aspect of the development and implementation of a new internal software system",
+              "Wrote Java and Python code that sped up portions of ATS's development workflow by 300%",
+              "Extensively used and taught Git, Sourcetree, Jira, Bitbucket, Docker, IntelliJ, and Adobe Acrobat, among others",
+              "Testing lead - wrote thousands of lines of documentation and feedback for both developers and end users",
+              "Troubleshot and resolved technical issues for over 40 employees, improving IT support satisfaction rates by 50%"
           ]
         }
       ]
@@ -51,26 +55,20 @@
       "projects": [
         {
           "name": "FuturFindr.me",
-          "desc": "Website I built with a team in my Software Engineer class which provides uses a place to scout out a career, housing, and school from one location. Includes a React.js frontend, Flask backend, PostgreSQL database with data scraped from multiple APIs, and a Postman API documentation page."
-        }, {
-          "name": "Star Fox Forever",
-          "desc": "Fan game I built in my Game Technology class using the Godot engine and C++. Mechanics were programmed to be similar to Star Fox 64 but with a infinite procedurally-generated level."
-        }, {
-          "name": "enable_extensions.py",
-          "desc": "Linux backdoor script I wrote in my Ethical Hacking class which adds a remote shell backdoor to the OS as both a cron job and a bashrc script, as well as a systemd service which reinstalls the two other backdoors if it detects either were removed. Installed scripts are given tricky names to avoid detection."
+          "desc": "Dynamic website built in collaboration with a 4-person dev team at UT to help students prepare for and plan their future careers, housing, etc. Includes a React.js frontend, Flask backend, PostgreSQL database with data scraped from multiple APIs, and a Postman documentation page."
         }, {
           "name": "BPMN Bulk Editing Tool",
-          "desc": "Java program I wrote for ATS that helps with creating BPMN diagrams we use for our internal record-keeping tool. Mostly just a JSON find-and-replace tool with some Windows file-editing functionality, but its been extremely useful and saved us a bunch of time."
+          "desc": "Spearheaded and single-handedly developed a Java tool deployed at ATS, significantly streamlining the creation of BPMN diagrams used with our internal software. Includes a whole-folder file editing capability which saved other employees countless hours of time."
+        }, {
+          "name": "Star Fox Forever",
+          "desc": "Designed and developed a video game using the Godot engine and C++. Mechanics were programmed to be reminiscent of the beloved Star Fox 64 but with infinite, procedurally-generated levels. Available to download on GitHub."
+        }, {
+          "name": "enable_extensions.py",
+          "desc": "Linux backdoor script written for Ethical Hacking which adds multiple remote shell backdoors to the OS. Programmed using Kali Linux to avoid detection and reinstall itself if removed."
+        }, {
+          "name": "sethparsons.me",
+          "desc": "Personal website made similarly to FuturFindr with the purpose of showing off my projects, hobbies, and resume. Hosted on Amazon Web Services (AWS) using Amplify, EC2, Route 53, and RDS."
         }
-      ]
-    }, 
-    "Key Skills": {
-      "skills": [
-        "Python, Java, C++",
-        "Web Development with React.js and Flask",
-        "Git, Docker",
-        "Atlassian Suite, Microsoft Office",
-        "Literate and knowledgable about a wide variety of computing fields"
       ]
     }
   }

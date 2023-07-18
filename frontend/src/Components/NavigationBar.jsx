@@ -10,7 +10,7 @@ function NavigationBar() {
       <Navbar 
         variant="dark"
         style={{
-          backgroundColor: "#9900CC"
+          backgroundColor: "black"
         }}
       >
         <Container>
